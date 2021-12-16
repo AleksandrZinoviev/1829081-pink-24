@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html class='page' lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+  </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--menu-close">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img"src="#" width="" height="" alt="Логотип">
+      <img class="page-header__logo-img" src="/img/header/logotype-white-mobile.svg" width="74" height="23" alt="Логотип приложения PINK.">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper page-header__main-nav-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
@@ -25,50 +26,102 @@
             <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">HTML Academy</a>
+            <a href="#" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__totle">Фотографии пользователей</h1>
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <img class="page-main__img-panorama" src="#" alt="Панорама дня.">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+        <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div><img class="page-main__img-panorama" src="#" alt="Панорама дня.">
         <p class="page-main__text-panorama text-panorama"></p>
         <section class="page-main__catalog-galery catalog-galery">
           <ul class="catalog-galery__position-galery-list position-galery-list">
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Левон (5 часов назад)</p>
-              <p class="one-position-item__review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="one-position-item__like">Нравится: 356</p>
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img item-img">
+                  <img src="#" alt="Фото" class="item-img__img">
+                </li>
+                <li class="pesonal-user-list__item-user-name item-user-name">
+                  <p class="item-user-name__name">Левон</p>
+                  <p class="item-user-name__time">(5 часов назад)</p>
+                </li>
+                <li class="pesonal-user-list__item-review item-review">
+                  <p class="item-review__review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </li>
+                <li class="pesonal-user-list__item-like">
+                  <p class="item__like">Нравится: 356</p>
+                </li>
+              </ul>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Антон</p>
-              <p class="one-position-item__review">Соседи будут рады!</p>
-              <p class="one-position-item__like">Нравится:</p>
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img item-img">
+                  <img src="#" alt="Фото" class="item-img__img">
+                </li>
+                <li class="pesonal-user-list__item-user-name item-user-name">
+                  <p class="item-user-name__name">Антон</p>
+                  <p class="item-user-name__time">(12 часов назад)</p>
+                </li>
+                <li class="pesonal-user-list__item-review item-review">
+                  <p class="item-review__review">Соседи будут рады!</p>
+                </li>
+                <li class="pesonal-user-list__item-like">
+                  <p class="item__like">Нравится: 666</p>
+                </li>
+              </ul>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Барис</p>
-              <p class="one-position-item__review">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="one-position-item__like">Нравится:</p>
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img item-img">
+                  <img src="#" alt="Фото" class="item-img__img">
+                </li>
+                <li class="pesonal-user-list__item-user-name item-user-name">
+                  <p class="item-user-name__name">Барис</p>
+                  <p class="item-user-name__time">(20 часов назад)</p>
+                </li>
+                <li class="pesonal-user-list__item-review item-review">
+                  <p class="item-review__review">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </li>
+                <li class="pesonal-user-list__item-like">
+                  <p class="item__like">Нравится: 215</p>
+                </li>
+              </ul>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img"></li>
+                <li class="pesonal-user-list__item-user-name"></li>
+                <li class="pesonal-user-list__item-review"></li>
+                <li class="pesonal-user-list__item-like"></li>
+              </ul>
               <img src="#" alt="ФоТО" class="one-position-item__img">
               <p class="one-position-item__user-name">Сергей</p>
               <p class="one-position-item__review">Самая кубанская в мире!</p>
               <p class="one-position-item__like">Нравится:</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img"></li>
+                <li class="pesonal-user-list__item-user-name"></li>
+                <li class="pesonal-user-list__item-review"></li>
+                <li class="pesonal-user-list__item-like"></li>
+              </ul>
               <img src="#" alt="ФоТО" class="one-position-item__img">
               <p class="one-position-item__user-name">Максим</p>
               <p class="one-position-item__review">Где снег-то?</p>
               <p class="one-position-item__like">Нравится:</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
+              <ul class="item-gallery__pesonal-user-list pesonal-user-list">
+                <li class="pesonal-user-list__item-img"></li>
+                <li class="pesonal-user-list__item-user-name"></li>
+                <li class="pesonal-user-list__item-review"></li>
+                <li class="pesonal-user-list__item-like"></li>
+              </ul>
               <img src="#" alt="ФоТО" class="one-position-item__img">
               <p class="one-position-item__user-name">Надежда</p>
               <p class="one-position-item__review">Всем GM и взаимные лайки!</p>
