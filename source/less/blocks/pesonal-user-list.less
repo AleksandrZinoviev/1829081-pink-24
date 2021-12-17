@@ -10,3 +10,45 @@
   left: -77px;
   top: 34px;
 }
+
+.pesonal-user-list__item-user-name {
+  display: flex;
+  align-items: baseline;
+}
+
+.item-user-name__name {
+  margin-right: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #283645;
+}
+
+.item-user-name__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.item-review__review {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.item-like {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #d22856;
+
+  &::after {
+    background-image: url("../img/catalog/heart.svg");
+  }
+}
