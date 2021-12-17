@@ -68,10 +68,9 @@
   color: #d22856;
 }
 
-.page-main__wrapper {
-  padding-bottom: 300px;
+.page-main__title-wrapper {
+  padding-bottom: 153px;
   position: relative;
-  min-height: 372px;
   box-sizing: border-box;
 
   &::before {
@@ -79,7 +78,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: calc(100% + 87px);
+    height: 255px;
     background: url(../img/main/back-mobile.jpg) no-repeat top left;
     background-size: cover;
     top: -87px;
@@ -96,8 +95,14 @@
   line-height: 33px;
   text-align: center;
   color: #ffffff;
-  top: 78px;
+  top: 9px;
   left: 62px;
+  z-index: 3;
+}
+
+.page-main__text-wrapper {
+  display: block;
+  width: 100%;
 }
 
 .page-main__text {
@@ -106,4 +111,9 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  padding-top: 44px;
+  left: 46px;
+  position: relative;
+  display: block;
+  width: 242px;
 }
