@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html class='page' lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+  </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--menu-close">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img"src="#" width="" height="" alt="Логотип">
+      <img class="page-header__logo-img" src="/img/header/logotype-white-mobile.svg" width="74" height="23" alt="Логотип приложения PINK.">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper page-header__main-nav-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
@@ -25,15 +26,19 @@
             <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">HTML Academy</a>
+            <a href="#" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
     <main class="page-main">
-      <h1 class="page-main__head-title head-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="page-main__text-utp">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <div class="page-main__title-wrapper">
+      <h1 class="page-main__title head-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <div class="page-main__text-wrapper">
+      <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    </div>
       <form class="page-main__page-form page-form" aria-label="Необходимо заполнить поля.">
         <label class="page-form__form-label-input form-label-text">ФАМИЛИЯ:</label>
         <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
@@ -54,28 +59,28 @@
         <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
         <label class="page-form__form-label-checkbox form-label-checkbox">Разгромил отель</label>
         <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-input-text form-input-text">НОМЕР ТЕЛЕФОНА</label>
+        <label class="page-form__form-label-text form-label-text">НОМЕР ТЕЛЕФОНА</label>
         <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
-        <label class="page-form__form-input-text form-input-text">АДРЕС ПОЧТЫ</label>
+        <label class="page-form__form-label-text form-label-text">АДРЕС ПОЧТЫ</label>
         <p class="page-form__user-apps user-apps">С каким приложением путешествовали?</p>
         <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
         <input class="page-form__form-input-radio form-radio" type="radio" name="name" checked>
-        <label class="page-form__form-input-radio form-input-radio">Pink для iOS</label>
+        <label class="page-form__form-label-radio form-label-radio">Pink для iOS</label>
         <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-input-radio form-input-radio">Pink на Android</label>
+        <label class="page-form__form-label-radio form-label-radio">Pink на Android</label>
         <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-input-radio form-input-radio">Windows Phone</label>
+        <label class="page-form__form-label-radio form-label-radio">Windows Phone</label>
         <p class="page-form__user-emotions user-emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
         <input class="page-form__form-input-text form-input-text" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text" name="name">
       </form>
     </main>
-      <footer class="page-footer">
-      <img src="#" alt="Логотип Пинк." class="page-footer__logo">
+    <footer class="page-footer">
+      <img src="../img/footer/logotype-blue-tablet.svg" alt="Логотип Пинк." class="page-footer__logo">
       <ul class="page-footer__social-networks-list social-networks-list">
         <li class="social-networks-list__item">twitter</li>
         <li class="social-networks-list__item">facebook</li>
         <li class="social-networks-list__item">youtube</li>
       </ul>
       <p class="page-footer__developed-text">Разработано</p>
-      <img src="№" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
+      <img src="https://htmlacademy.ru/intensive/adaptive" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
     </footer>
