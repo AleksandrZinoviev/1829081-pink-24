@@ -1,0 +1,62 @@
+@media (min-width: 1200px) {
+  .about__list-wrapper {
+    display: grid;
+    grid-template-areas:
+      "img-first img-second img-third"
+      "item-first item-second item-third";
+
+      &::before {
+      grid-area: img-first;
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: calc(320px - 38px);
+      background: url("../img/main/iphone-Desktop-1.png") no-repeat top left;
+      bottom: 0;
+      left: 25%;
+      transform: translateX(-32%);
+      z-index: 100;
+    }
+
+    &::before {
+      grid-area: img-second;
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: calc(320px - 38px);
+      background: url("../img/main/iphone-Desktop-2.png") no-repeat top left;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-32%);
+      z-index: 100;
+    }
+
+    &::before {
+      grid-area: img-third;
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: calc(320px - 38px);
+      background: url("../img/main/iphone-Desktop-3.png") no-repeat top left;
+      bottom: 0;
+      left: 75%;
+      transform: translateX(-32%);
+      z-index: 100;
+    }
+  }
+
+  .about-list__item--first {
+    grid-area: item-first;
+  }
+
+  .about-list__item--second {
+    grid-area: item-second;
+  }
+
+  .about-list__item--third {
+    grid-area: item-third;
+  }
+}
