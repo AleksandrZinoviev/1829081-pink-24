@@ -40,25 +40,42 @@
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
     </div>
       <form class="page-main__page-form page-form" aria-label="Необходимо заполнить поля.">
+
         <label class="page-form__form-label-input form-label-text">ФАМИЛИЯ:</label>
         <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
         <label class="page-form__form-label-input form-label-text">ИМЯ:</label>
         <input class="page-form__form-input-text form-input-text" placeholder="Введите ваше имя *" type="text" name="name" aria-label="Внесите своё имя.">
         <label class="page-form__form-label-input form-label-text">ОТЧЕСТВО:</label>
         <input class="page-form__form-input-text form-input-text" placeholder="Ну и отчество тоже" type="text" name="name" aria-label="Внесите своё отчество.">
-        <p class="page-form__user-impression user-impression">Ваши безбашенные достижения в путешествии</p>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Сделал селфи с акулой</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Обгорел на пляже</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Видел Чака Норриса</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-label-checkbox form-label-checkbox">Накупил сувениров</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-label-checkbox form-label-checkbox">Удержал башню</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Разгромил отель</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
+        <section class="achievements">
+          <h3 class="form-title achievements__title">Ваши безбашенные достижения в путешествии</h3>
+        <ul class="achievements__list">
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="selfy" id="selfy" type="checkbox" checked>
+          <label for="selfy" class="checkbox__label">Сделал селфи с акулой</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="burned" id="burned" type="checkbox" checked>
+          <label for="burned" class="checkbox__label">Обгорел на пляже</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="noris" id="noris" type="checkbox">
+          <label for="noris" class="checkbox__label">Видел Чака Норриса</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="souvenir" id="souvenir" type="checkbox">
+          <label for="souvenir" class="checkbox__label">Накупил сувениров</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="tower" id="tower" type="checkbox">
+          <label for="tower" class="checkbox__label">Удержал башню</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="hotel" id="hotel" type="checkbox" checked>
+          <label for="hotel" class="checkbox__label">Разгромил отель</label>
+        </li>
+      </ul>
+    </section>
         <label class="page-form__form-label-text form-label-text">НОМЕР ТЕЛЕФОНА</label>
         <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
         <label class="page-form__form-label-text form-label-text">АДРЕС ПОЧТЫ</label>
