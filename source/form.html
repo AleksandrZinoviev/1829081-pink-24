@@ -40,13 +40,22 @@
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
     </div>
       <form class="page-main__page-form page-form" aria-label="Необходимо заполнить поля.">
-
-        <label class="page-form__form-label-input form-label-text">ФАМИЛИЯ:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
-        <label class="page-form__form-label-input form-label-text">ИМЯ:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Введите ваше имя *" type="text" name="name" aria-label="Внесите своё имя.">
-        <label class="page-form__form-label-input form-label-text">ОТЧЕСТВО:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Ну и отчество тоже" type="text" name="name" aria-label="Внесите своё отчество.">
+        <section class="name-user">
+          <ul class="name-user__list">
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">ФАМИЛИЯ:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
+            </li>
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">ИМЯ:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Введите ваше имя *" type="text" name="name" aria-label="Внесите своё имя.">
+            </li>
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">ОТЧЕСТВО:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Ну и отчество тоже" type="text" name="name" aria-label="Внесите своё отчество.">
+            </li>
+          </ul>
+        </section>
         <section class="achievements">
           <h3 class="form-title achievements__title">Ваши безбашенные достижения в путешествии</h3>
         <ul class="achievements__list">
@@ -76,17 +85,36 @@
         </li>
       </ul>
     </section>
-        <label class="page-form__form-label-text form-label-text">НОМЕР ТЕЛЕФОНА</label>
-        <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
-        <label class="page-form__form-label-text form-label-text">АДРЕС ПОЧТЫ</label>
-        <p class="page-form__user-apps user-apps">С каким приложением путешествовали?</p>
-        <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name" checked>
-        <label class="page-form__form-label-radio form-label-radio">Pink для iOS</label>
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-label-radio form-label-radio">Pink на Android</label>
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-label-radio form-label-radio">Windows Phone</label>
+    <section class="user-contacts">
+      <ul class="user-contacts__list">
+        <li class="user-contacts__item">
+          <label class="page-form__form-label-input form-label-text">НОМЕР ТЕЛЕФОНА:</label>
+          <input class="page-form__form-input-text form-input-text" placeholder="" type="text" name="name" aria-label="">
+        </li>
+        <li class="name-user__item">
+          <label class="page-form__form-label-input form-label-text">АДРЕС ПОЧТЫ</label>
+          <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
+        </li>
+      </ul>
+    </section>
+    <section class="user-apps">
+      <h3 class="form-title user-apps__title">С каким приложением путешествовали?</h3>
+    <ul class="user-apps__list">
+    <li class="radio user-apps__item">
+      <input class="radio__input visually-hidden" name="iOS" id="iOS" type="radio" checked>
+      <label for="iOS" class="radio__label">Pink для iOS</label>
+    </li>
+    <li class="radio user-apps__item">
+      <input class="radio__input visually-hidden" name="Android" id="Android" type="radio" checked>
+      <label for="Android" class="radio__label">Pink на Android</label>
+    </li>
+    <li class="radio user-apps__item">
+      <input class="radio__input visually-hidden" name="WinPhone" id="WinPhone" type="radio">
+      <label for="WinPhone" class="radio__label">Windows Phone</label>
+    </li>
+  </ul>
+</section>
+        
         <p class="page-form__user-emotions user-emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
         <input class="page-form__form-input-text form-input-text" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text" name="name">
       </form>
