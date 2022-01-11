@@ -49,16 +49,30 @@
           </div>
           <ul class="catalog-galery__position-galery-list position-galery-list">
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
-                  <img src="../img/catalog/photo-1-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <!--
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/galery/panorama-desktop.webp 1x,
+                    img/galery/panorama-desktop@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/galery/panorama-tablet.webp 1x,
+                    img/galery/panorama-tablet@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="
+                    img/galery/panorama-mobile.webp 1x,
+                    img/galery/panorama-mobile.webp 2x" />
+                    -->
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop-1x.jpg 1x, ./img/catalog/photo-1-desktop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/photo-1-tablet-1x.jpg 1x, ./img/catalog/photo-1-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/photo-1-mobile-1x.jpg" srcset="./img/catalog/photo-1-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
                 </div>
-                  <p class="item-gallery__user-name">Левон</p>
-                  <p class="item-gallery__time">(5 часов назад)</p>
+                  <p class="item-gallery__user-name">Левон <span class="item-gallery__time">(5 часов назад)</span></p>
                   <p class="item-gallery__review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   <p class="item-gallery__like">Нравится: 356</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
+                <div class="item-gallery__wrapper">
                   <img src="../img/catalog/photo-2-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
                 </div>
                   <p class="item-gallery__user-name">Антон</p>
@@ -67,7 +81,7 @@
                   <p class="item-gallery__like">Нравится: 666</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
+                <div class="item-gallery__wrapper">
                   <img src="../img/catalog/photo-3-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
                 </div>
                   <p class="item-gallery__user-name">Барис</p>
@@ -76,7 +90,7 @@
                   <p class="item-gallery__like">Нравится: 215</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
+                <div class="item-gallery__wrapper">
                   <img src="../img/catalog/photo-4-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
                 </div>
                   <p class="item-gallery__user-name">Сергей</p>
@@ -85,7 +99,7 @@
                   <p class="item-gallery__like">Нравится: 4</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
+                <div class="item-gallery__wrapper">
                   <img src="../img/catalog/photo-5-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
                 </div>
                   <p class="item-gallery__user-name">Максим</p>
@@ -94,7 +108,7 @@
                   <p class="item-gallery__like">Нравится: 150</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-                <div class="item-gallery__img--wrapper">
+                <div class="item-gallery__wrapper">
                   <img src="../img/catalog/photo-6-tablet.jpg" alt="Фото" class="item-gallery__img" width="300" height="300">
                 </div>
                   <p class="item-gallery__user-name">Надежда</p>
