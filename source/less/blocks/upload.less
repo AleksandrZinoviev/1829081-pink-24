@@ -1,24 +1,28 @@
 .upload {
   background-color: #f2f2f2;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.upload__img {
+  display: block;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .upload__correct-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style-position: inside;
+}
 
-  &:nth-child(1) {
-    list-style-image: url("../img/catalog/crop.svg");
-  }
-
-  &:nth-child(2) {
-    list-style-image: url("../img/catalog/fill.svg");
-  }
-
-  &:nth-child(3) {
-    list-style-image: url("../img/catalog/crop.svg");
-  }
+.correct-list__item {
+  display: block;
+  margin: 0 auto;
 }
 
 .upload__slider-btn {
