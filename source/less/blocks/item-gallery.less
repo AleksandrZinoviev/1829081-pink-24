@@ -1,0 +1,84 @@
+.item-gallery {
+  background: #F2F2F2;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 14px;
+}
+
+.item-gallery__img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.item-gallery__wrapper {
+
+}
+
+.item-gallery__user-name {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: #283645;
+}
+
+.item-gallery__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.item-gallery__review {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.item-gallery__like {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 49px;
+  padding-right: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+
+  &::after {
+    content: "";
+    width: 13px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 5px;
+    background-image: url("../img/catalog/heart.svg");
+  }
+}
+
+@media (min-width: 660px) {
+  .position-galery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}

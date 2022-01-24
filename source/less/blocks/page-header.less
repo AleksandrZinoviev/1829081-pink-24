@@ -1,0 +1,30 @@
+.page-header {
+  background: #283645;
+  padding-top: 70px;
+  position: relative;
+  z-index: 100;
+}
+
+.page-header--menu-close {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 23px;
+  left: 22px;
+  display: block;
+  width: 74px;
+  height: 23px;
+}
+
+.page-header--menu-close .page-header__main-nav-wrapper {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .page-header--menu-close .page-header__main-nav-wrapper {
+    display: block;
+    background: none;
+  }
+}

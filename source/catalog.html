@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html class='page' lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+  </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--menu-close">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img"src="#" width="" height="" alt="Логотип">
+      <img class="page-header__logo-img" src="/img/header/logotype-white-mobile.svg" width="74" height="23" alt="Логотип приложения PINK.">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper page-header__main-nav-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
@@ -25,57 +26,137 @@
             <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">HTML Academy</a>
+            <a href="#" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__totle">Фотографии пользователей</h1>
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <img class="page-main__img-panorama" src="#" alt="Панорама дня.">
-        <p class="page-main__text-panorama text-panorama"></p>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+      </div>
+        <div class="page-main__text-wrapper">
+          <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
         <section class="page-main__catalog-galery catalog-galery">
+          <div class="catalog-galery__panorama-day panorama-day">
+            <img width="320" height="137" src="../img/catalog/panorama-tablet.jpg" alt="Фото" class="panorama-day__img">
+            <p class="panorama-day__name">Анна</p>
+            <p class="panorama-day__time">(5 минут назад)</p>
+            <p class="panorama-day__review">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="panorama-day__like">Нравится: 215</p>
+          </div>
           <ul class="catalog-galery__position-galery-list position-galery-list">
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Левон (5 часов назад)</p>
-              <p class="one-position-item__review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="one-position-item__like">Нравится: 356</p>
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-1-desctop-1x.webp 1x, ./img/catalog/desctop/photo-1-desctop-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-1-tablet-1x.webp 1x, ./img/catalog/tablet/photo-1-tablet-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-1-mobile-1x.webp 1x, ./img/catalog/mobile/photo-1-mobile-1x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-1-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-1-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-1-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-1-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-1-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-1-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                  <p class="item-gallery__user-name">Левон <span class="item-gallery__time">(5 часов назад)</span></p>
+                  <p class="item-gallery__review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <p class="item-gallery__like">Нравится: 356</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Антон</p>
-              <p class="one-position-item__review">Соседи будут рады!</p>
-              <p class="one-position-item__like">Нравится:</p>
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-2-desctop-1x.webp 1x, ./img/catalog/desctop/photo-2-desctop-2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-2-tablet-1x.webp 1x, ./img/catalog/tablet/photo-2-tablet-2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-2-mobile-1x.webp 1x, ./img/catalog/mobile/photo-2-mobile-2x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-2-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-2-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-2-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-2-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-2-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-2-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                  <p class="item-gallery__user-name">Антон <span class="item-gallery__time">(12 часов назад)</span></p>
+                  <p class="item-gallery__review">Соседи будут рады!</p>
+                  <p class="item-gallery__like">Нравится: 666</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Барис</p>
-              <p class="one-position-item__review">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="one-position-item__like">Нравится:</p>
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-3-desctop-1x.webp 1x, ./img/catalog/desctop/photo-3-desctop-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-3-tablet-1x.webp 1x, ./img/catalog/tablet/photo-3-tablet-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-3-mobile-1x.webp 1x, ./img/catalog/mobile/photo-3-mobile-1x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-3-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-3-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-3-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-3-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-3-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-3-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                  <p class="item-gallery__user-name">Барис <span class="item-gallery__time">(20 часов назад)</span></p>
+                  <p class="item-gallery__review">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <p class="item-gallery__like">Нравится: 215</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Сергей</p>
-              <p class="one-position-item__review">Самая кубанская в мире!</p>
-              <p class="one-position-item__like">Нравится:</p>
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-4-desctop-1x.webp 1x, ./img/catalog/desctop/photo-4-desctop-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-4-tablet-1x.webp 1x, ./img/catalog/tablet/photo-4-tablet-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-4-mobile-1x.webp 1x, ./img/catalog/mobile/photo-4-mobile-1x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-4-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-4-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-4-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-4-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-4-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-4-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                  <p class="item-gallery__user-name">Сергей <span class="item-gallery__time">(25 часов назад)</span></p>
+                  <p class="item-gallery__review">Самая кубанская в мире!</p>
+                  <p class="item-gallery__like">Нравится: 4</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Максим</p>
-              <p class="one-position-item__review">Где снег-то?</p>
-              <p class="one-position-item__like">Нравится:</p>
+                <div class="item-gallery__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-5-desctop-1x.webp 1x, ./img/catalog/desctop/photo-5-desctop-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-5-tablet-1x.webp 1x, ./img/catalog/tablet/photo-5-tablet-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-5-mobile-1x.webp 1x, ./img/catalog/mobile/photo-5-mobile-1x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-5-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-5-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-5-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-5-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-5-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-5-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+
+                </div>
+                  <p class="item-gallery__user-name">Максим <span class="item-gallery__time">(40 часов назад)</span></p>
+                  <p class="item-gallery__review">Где снег-то?</p>
+                  <p class="item-gallery__like">Нравится: 150</p>
             </li>
             <li class="position-galery-list__item-gallery item-gallery">
-              <img src="#" alt="ФоТО" class="one-position-item__img">
-              <p class="one-position-item__user-name">Надежда</p>
-              <p class="one-position-item__review">Всем GM и взаимные лайки!</p>
-              <p class="one-position-item__like">Нравится:</p>
+                <div class="item-gallery__wrapper ">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-6-desctop-1x.webp 1x, ./img/catalog/desctop/photo-6-desctop-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-6-tablet-1x.webp 1x, ./img/catalog/tablet/photo-6-tablet-1x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/catalog/mobile/photo-6-mobile-1x.webp 1x, ./img/catalog/mobile/photo-6-mobile-1x.webp 2x" />
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desctop/photo-6-desctop-1x.jpg 1x, ./img/catalog/desctop/photo-6-desctop-2x.jpg 2x" />
+                    <source media="(min-width: 660px)" srcset="./img/catalog/tablet/photo-6-tablet-1x.jpg 1x, ./img/catalog/tablet/photo-6-tablet-2x.jpg 2x" />
+                    <img class="item-gallery__img" src="./img/catalog/mobile/photo-6-mobile-1x.jpg" srcset="./img/catalog/mobile/photo-6-mobile-2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                  <p class="item-gallery__user-name">Надежда <span class="item-gallery__time">(45 часов назад)</span></p>
+                  <p class="item-gallery__review">Всем GM и взаимные лайки</p>
+                  <p class="item-gallery__like">Нравится: 2560</p>
             </li>
           </ul>
-
+          <p class="catalog-galery__text-epilogue">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </section>
+        <section class="page-main__upload upload">
+          <img class="upload__img" src="../img/catalog/photo-7.jpg" alt="Фотография." width="280" height="374">
+          <ul class="upload__correct-list correct-list">
+            <li class="correct-list__item">
+              <img src="../img/catalog/crop.svg" alt="" class="correct-list__item-img">
+            </li>
+            <li class="correct-list__item">
+              <img src="../img/catalog/fill.svg" alt="" class="correct-list__item-img">
+            </li>
+            <li class="correct-list__item">
+              <img src="../img/catalog/contrast.svg" alt="" class="correct-list__item-img">
+            </li>
+          </ul>
+          <button class="upload__slider-btn">Запостить</button>
+          <button class="upload__cancel-btn">Отмена</button>
         </section>
         <section class="page-main__upload upload">
           <img src="#" alt="Фотография.">
@@ -90,7 +171,7 @@
         </section>
     </main>
     <footer class="page-footer">
-      <img src="#" alt="Логотип Пинк." class="page-footer__logo">
+      <img src="../img/footer/logotype-blue-tablet.svg" alt="Логотип Пинк." class="page-footer__logo">
       <ul class="page-footer__social-networks-list social-networks-list">
         <li class="social-networks-list__item">twitter</li>
         <li class="social-networks-list__item">facebook</li>

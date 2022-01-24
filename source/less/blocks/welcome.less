@@ -1,0 +1,171 @@
+.welcome {
+  padding-top: 20px;
+}
+
+.welcome__slogan-wrapper {
+  padding-bottom: 300px;
+  position: relative;
+  min-height: 372px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: calc(100% + 87px);
+    background: url("../img/main/back-mobile.jpg") no-repeat top left;
+    background-size: cover;
+    top: -87px;
+    left: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 286px;
+    background: url("../img/main/hand-mobile.png") no-repeat top left;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+.welcome__slogan--mobile {
+  display: block;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  width: 236px;
+}
+
+.welcome__slogan--tablet {
+  display: none;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  width: 236px;
+}
+
+.welcome__slogan--desctop {
+  display: none;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  width: 236px;
+}
+
+
+.welcome__download-apps {
+  background-color: #1d2631;
+  padding: 28px 0 19px 0;
+}
+
+.welcome__link-wrapper {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.welcome__link {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 10px 15px 10px;
+  min-width: 280px;
+  max-width: 320px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.welcome__text {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  width: 281px;
+  display: block;
+  padding: 0 0 0 21px;
+}
+
+.welcome__list-container {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 660px) {
+  .welcome__slogan-wrapper::before {
+    background: url("../img/main/back-tablet.jpg") no-repeat top left;
+    background-size: cover;
+  }
+
+  .welcome__slogan-wrapper::after {
+    background: url("../img/main/hand-tablet.png") no-repeat top left;
+    width: 660px;
+    height: 545px;
+    top: 72px;
+    left: 330px;
+  }
+
+  .welcome__slogan--mobile {
+    display: none;
+  }
+
+  .welcome__slogan--tablet {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0;
+    padding-top: 93px;
+    left: 51px;
+  }
+
+  .welcome__download-apps {
+    padding: 0;
+    background: none;
+    position: absolute;
+    top: 329px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome__slogan-wrapper::before {
+    background: url("../img/main/back-desktop.jpg") no-repeat top left;
+    background-size: cover;
+  }
+}
+

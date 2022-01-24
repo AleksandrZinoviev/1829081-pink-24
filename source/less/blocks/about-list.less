@@ -1,0 +1,85 @@
+.about-list__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.about-list__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .about-list__title {
+    text-align: left;
+  }
+
+  .about-list__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-list {
+    width: 965px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about-list__item {
+    padding-top: 358px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 186px;
+      height: 303px;
+      background: url("../img/main/iphone-Desktop-1.png") no-repeat top left;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+    }
+  }
+
+  .about-list__title {
+    width: 225px;
+    margin: 0 auto 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .about-list__text {
+    width: 233px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  .about-list__item--first::before {
+    background: url("../img/main/iphone-Desktop-1.png") no-repeat top left;
+  }
+
+  .about-list__item--second::before {
+    background: url("../img/main/iphone-Desktop-2.png") no-repeat top left;
+  }
+
+  .about-list__item--third::before {
+    background: url("../img/main/iphone-Desktop-3.png") no-repeat top left;
+  }
+}

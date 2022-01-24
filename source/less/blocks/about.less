@@ -1,0 +1,70 @@
+
+.about {
+}
+
+.about__list-wrapper {
+  background-image: url("../img/main/grey-background.png");
+  background-size: 100% auto;
+  position: relative;
+  padding-bottom: 315px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 157px;
+    height: 320px;
+    background: url(../img/main/Group-1.png) no-repeat top left;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+}
+
+.about__text-wrapper {
+  background: #ffffff;
+}
+
+.about__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  padding: 35px 0 0 0;
+  margin: 0;
+}
+
+.about__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .about__list-wrapper {
+    box-sizing: border-box;
+    width: 660px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-left: 300px;
+
+    &::after {
+      bottom: unset;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about__list-wrapper {
+    padding-left: 0;
+    width: auto;
+
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html class='page' lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+  </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--menu-close">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img"src="#" width="" height="" alt="Логотип">
+      <img class="page-header__logo-img" src="/img/header/logotype-white-mobile.svg" width="74" height="23" alt="Логотип приложения PINK.">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper page-header__main-nav-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
@@ -25,57 +26,106 @@
             <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">HTML Academy</a>
+            <a href="#" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
     <main class="page-main">
-      <h1 class="page-main__head-title head-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="page-main__text-utp">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <div class="page-main__title-wrapper">
+      <h1 class="page-main__title head-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <div class="page-main__text-wrapper">
+      <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    </div>
       <form class="page-main__page-form page-form" aria-label="Необходимо заполнить поля.">
-        <label class="page-form__form-label-input form-label-text">ФАМИЛИЯ:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
-        <label class="page-form__form-label-input form-label-text">ИМЯ:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Введите ваше имя *" type="text" name="name" aria-label="Внесите своё имя.">
-        <label class="page-form__form-label-input form-label-text">ОТЧЕСТВО:</label>
-        <input class="page-form__form-input-text form-input-text" placeholder="Ну и отчество тоже" type="text" name="name" aria-label="Внесите своё отчество.">
-        <p class="page-form__user-impression user-impression">Ваши безбашенные достижения в путешествии</p>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Сделал селфи с акулой</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Обгорел на пляже</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Видел Чака Норриса</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-label-checkbox form-label-checkbox">Накупил сувениров</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-label-checkbox form-label-checkbox">Удержал башню</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name" checked>
-        <label class="page-form__form-label-checkbox form-label-checkbox">Разгромил отель</label>
-        <input class="page-form__form-input-checkbox form-input-checkbox" type="checkbox" name="name">
-        <label class="page-form__form-input-text form-input-text">НОМЕР ТЕЛЕФОНА</label>
-        <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
-        <label class="page-form__form-input-text form-input-text">АДРЕС ПОЧТЫ</label>
-        <p class="page-form__user-apps user-apps">С каким приложением путешествовали?</p>
-        <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name" checked>
-        <label class="page-form__form-input-radio form-input-radio">Pink для iOS</label>
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-input-radio form-input-radio">Pink на Android</label>
-        <input class="page-form__form-input-radio form-radio" type="radio" name="name">
-        <label class="page-form__form-input-radio form-input-radio">Windows Phone</label>
-        <p class="page-form__user-emotions user-emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+        <section class="name-user">
+          <ul class="name-user__list">
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">Фамилия:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Укажите фамилию *" type="text" name="name" aria-label="Внесите свою фамилию.">
+            </li>
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">Имя:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Введите ваше имя *" type="text" name="name" aria-label="Внесите своё имя.">
+            </li>
+            <li class="name-user__item">
+              <label class="page-form__form-label-input form-label-text">Отчество:</label>
+              <input class="page-form__form-input-text form-input-text" placeholder="Ну и отчество тоже" type="text" name="name" aria-label="Внесите своё отчество.">
+            </li>
+          </ul>
+        </section>
+        <section class="achievements">
+          <h3 class="form-title achievements__title">Ваши безбашенные достижения в путешествии</h3>
+        <ul class="achievements__list">
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="selfy" id="selfy" type="checkbox" checked>
+          <label for="selfy" class="checkbox__label">Сделал селфи с акулой</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="burned" id="burned" type="checkbox" checked>
+          <label for="burned" class="checkbox__label">Обгорел на пляже</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="noris" id="noris" type="checkbox">
+          <label for="noris" class="checkbox__label">Видел Чака Норриса</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="souvenir" id="souvenir" type="checkbox">
+          <label for="souvenir" class="checkbox__label">Накупил сувениров</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="tower" id="tower" type="checkbox">
+          <label for="tower" class="checkbox__label">Удержал башню</label>
+        </li>
+        <li class="checkbox achievements__item">
+          <input class="checkbox__input visually-hidden" name="hotel" id="hotel" type="checkbox" checked>
+          <label for="hotel" class="checkbox__label">Разгромил отель</label>
+        </li>
+      </ul>
+    </section>
+    <section class="user-contacts">
+      <ul class="user-contacts__list">
+        <li class="user-contacts__item">
+          <label class="page-form__form-label-input form-label-text">Номер телефона:</label>
+          <input class="page-form__form-input-text form-input-text" placeholder="" type="text" name="name" aria-label="">
+        </li>
+        <li class="name-user__item">
+          <label class="page-form__form-label-input form-label-text">Адрес почты:</label>
+          <input class="page-form__form-input-text form-text" placeholder="" type="text" name="name">
+        </li>
+      </ul>
+    </section>
+      <section class="user-apps">
+        <h3 class="form-title user-apps__title">С каким приложением путешествовали?</h3>
+        <ul class="user-apps__list apps-list">
+          <li class="radio user-apps__item">
+            <input class="radio__input visually-hidden" name="apps-list" id="apps-iOS" type="radio" checked>
+            <label for="apps-iOS" class="radio__label">Pink для iOS</label>
+          </li>
+          <li class="radio user-apps__item">
+            <input class="radio__input visually-hidden" name="apps-list" id="apps-Android" type="radio" checked>
+            <label for="apps-Android" class="radio__label">Pink на Android</label>
+          </li>
+          <li class="radio user-apps__item">
+            <input class="radio__input visually-hidden" name="apps-list" id="apps-WinPhone" type="radio">
+            <label for="apps-WinPhone" class="radio__label">Windows Phone</label>
+          </li>
+        </ul>
+      </section>
+
+        <p class="page-form__user-emotions user-emotions">Опишите свои эмоции</p>
         <input class="page-form__form-input-text form-input-text" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text" name="name">
       </form>
     </main>
-      <footer class="page-footer">
-      <img src="#" alt="Логотип Пинк." class="page-footer__logo">
+    <footer class="page-footer">
+      <img src="../img/footer/logotype-blue-tablet.svg" alt="Логотип Пинк." class="page-footer__logo">
       <ul class="page-footer__social-networks-list social-networks-list">
         <li class="social-networks-list__item">twitter</li>
         <li class="social-networks-list__item">facebook</li>
         <li class="social-networks-list__item">youtube</li>
       </ul>
       <p class="page-footer__developed-text">Разработано</p>
-      <img src="№" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
+      <img src="https://htmlacademy.ru/intensive/adaptive" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
     </footer>

@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Document</title>
 </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--menu-close">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img" src="/source/img/header/header-logo-mobile.svg" width="74" height="23" alt="Логотип.">
+      <img class="page-header__logo-img" src="/img/header/logotype-white-mobile.svg" width="74" height="23" alt="Логотип приложения PINK.">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper page-header__main-nav-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
@@ -25,7 +26,7 @@
             <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">HTML Academy</a>
+            <a href="#" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,63 +36,73 @@
     <h1 class="visually-hidden">Официальный сайт приложения Пинк</h1>
     <section class="page-main__welcome welcome">
       <h2 class="visually-hidden">Ссылки на маркетплейсы приложения</h2>
-      <p class="welcome__slogan">Взгляните на жизнь иначе!</p>
-      <a href="#" class="welcome__link" >Скачать приложение</a>
+      <div class="welcome__slogan-wrapper">
+        <p class="welcome__slogan--mobile">Взгляните на жизнь иначе!</p>
+      </div>
+      <div class="welcome__download-apps">
+      <div class="welcome__link-wrapper">
+        <a href="#" class="welcome__link" >Скачать приложение</a>
+      </div>
+      <div class="welcome__list-container">
       <ul class="welcome__list welcome-list">
         <li class="welcome-list__item">
           <a href="#" class="welcome-list__link">
-            <img class="welcome-list__img" src="#" width="" height="" alt="Логотип Apple.">
+            <img class="welcome-list__img" src="/img/marketplace/apple-logo.png" width="47" height="56" alt="Логотип Apple.">
+          </a>
+        </li>
+        <li class="welcome-list__item">
+          <a href="#" class="welcome-list__link" >
+            <img class="welcome-list__img" src="/img/marketplace/android-logo.png" width="43" height="47" alt="Логотип Android.">
           </a>
         </li>
         <li class="welcome-list__item">
           <a href="#" class="welcome-list__link">
-            <img class="welcome-list__img" src="#" width="" height="" alt="Логотип Apple.">
-          </a>
-        </li>
-        <li class="welcome-list__item">
-          <a href="#" class="welcome-list__link">
-            <img class="welcome-list__img" src="#" width="" height="" alt="Логотип Apple.">
+            <img class="welcome-list__img" src="/img/marketplace/microsoft-logo.png" width="44" height="41" alt="Логотип microsoft.">
           </a>
         </li>
       </ul>
+    </div>
       <p class="welcome__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
     </section>
       <section class="about page-main__about">
-        <p class="about__text">Устали от серости мегаполиса?</p>
-        <p class="about__text">Нам есть, что вам предложить!</p>
-        <ul class="about__list about-list">
-          <li class="about-list__item about-list__item--first">
-
-            <h3 class="about-list__title">Поднимает настроение</h3>
-            <p class="about-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-
-          </li>
-          <li class="about-list__item about-list__item--second">
-            <h3 class="about-list__title">Меняет мир вокруг</h3>
-            <p class="about-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="about-list__item about-list__item--third">
-            <h3 class="about-list__title">Заводит новых друзей</h3>
-            <p class="about-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="about__text-wrapper">
+          <p class="about__text">Устали от серости мегаполиса?</p>
+          <p class="about__text">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="about__list-wrapper">
+          <ul class="about__list about-list">
+            <li class="about-list__item about-list__item--first">
+              <h3 class="about-list__title">Поднимает настроение</h3>
+              <p class="about-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="about-list__item about-list__item--second">
+              <h3 class="about-list__title">Меняет мир вокруг</h3>
+              <p class="about-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="about-list__item about-list__item--third">
+              <h3 class="about-list__title">Заводит новых друзей</h3>
+              <p class="about-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
-        <section class="effect page-main__effect">
+        <section class="visually-hidden effect page-main__effect">
           <h3 class="effect__title">Эффект на 24 часа!</h3>
           <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="" class="effect__link">Узнать больше об исследовании</a>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
         </section>
         <section class="reviews page-main__reviews">
           <div class="reviews__slider-container reviews-slider">
             <div class="reviews-slider__frame">
               <ul class="reviews-slider__list">
                 <li class="reviews-slider__item">
-                  <p class="reviews-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть напривычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                   <p class="reviews-slider__author">Николай Петров</p>
-                  <p class="reviews-slider__author-age">25 лет, водитель трамвая</p>
+                  <p class="reviews-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть напривычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="visually-hidden reviews-slider__author-age">25 лет, водитель трамвая</p>
                 </li>
                 <li class="reviews-slider__item">
-                  <p class="reviews-slider__text">хорошо</p>
+                  <p class="reviews-slider__text"></p>
                   <p class="reviews-slider__author"></p>
                   <p class="reviews-slider__author-age"></p>
                 </li>
@@ -119,36 +130,36 @@
         </section>
         <section class="prace page-main__prace">
           <ul class="prace__prace-name-list prace-name-list">
-            <li class="prace-name-list__item">
+            <li class="prace-name-list__item prace-name-list__item--first">
               <h3 class="prace-name-list__title">БАЗА</h3>
               <p class="prace-name-list__coast">1,99 USD</p>
             </li>
-            <li class="prace-name-list__item">
+            <li class="prace-name-list__item prace-name-list__item--second">
               <h3 class="prace-name-list__title">СТАНДАРТ</h3>
               <p class="prace-name-list__coast">3,99 USD</p>
             </li>
-            <li class="prace-name-list__item">
+            <li class="prace-name-list__item prace-name-list__item--third">
               <h3 class="prace-name-list__title">АНЛИМ</h3>
               <p class="prace-name-list__coast">9,99 USD</p>
             </li>
           </ul>
-          <ul class="prace__prace-first prace-first">
-            <li class="prace-first__item">Розовый фильтр</li>
-            <li class="prace-first__item"></li>
-            <li class="prace-first__item"></li>
-            <li class="prace-first__item"></li>
+          <ul class="prace__prace-first-list prace-first-list">
+            <li class="prace-first-list__item">Розовый фильтр</li>
+            <li class="prace-first-list__item"></li>
+            <li class="prace-first-list__item"></li>
+            <li class="prace-first-list__item"></li>
           </ul>
-          <ul class="prace__prace-second prace-second">
-            <li class="prace-second__item">Смайлики</li>
-            <li class="prace-second__item"></li>
-            <li class="prace-second__item"></li>
-            <li class="prace-second__item"></li>
+          <ul class="prace__prace-second-list prace-second-list">
+            <li class="prace-second-list__item">Смайлики</li>
+            <li class="prace-second-list__item"></li>
+            <li class="prace-second-list__item"></li>
+            <li class="prace-second-list__item"></li>
           </ul>
-          <ul class="prace__prace-third prace-third">
-            <li class="prace-third__item">Комментарии</li>
-            <li class="prace-third__item"></li>
-            <li class="prace-third__item"></li>
-            <li class="prace-third__item"></li>
+          <ul class="prace__prace-third-list prace-third-list">
+            <li class="prace-third-list__item">Комментарии</li>
+            <li class="prace-third-list__item"></li>
+            <li class="prace-third-list__item"></li>
+            <li class="prace-third-list__item"></li>
           </ul>
           <ul class="prace__slider-bullits-list bullits-list">
             <li class="bullits-list__item">
@@ -183,14 +194,15 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.308614687905!2d30.32237148193502!3d59.93849344547913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638040168375!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
       </section>
       <footer class="page-footer">
-        <img src="#" alt="Логотип Пинк." class="page-footer__logo">
+        <div></div>
+        <img src="../img/footer/logotype-blue-tablet.svg" alt="Логотип Пинк." class="page-footer__logo">
         <ul class="page-footer__social-networks-list social-networks-list">
-          <li class="social-networks-list__item">twitter</li>
-          <li class="social-networks-list__item">facebook</li>
-          <li class="social-networks-list__item">youtube</li>
+          <li class="social-networks-list__item"></li>
+          <li class="social-networks-list__item"></li>
+          <li class="social-networks-list__item"></li>
         </ul>
         <p class="page-footer__developed-text">Разработано</p>
-        <img src="№" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
+        <img src="/img/htmlacademy.svg"  width="47" height="56" alt="Логотип HTMLAcademy" class="page-footer__developed-logo">
       </footer>
 </body>
 </html>
