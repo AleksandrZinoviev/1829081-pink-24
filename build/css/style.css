@@ -936,6 +936,7 @@
   color: #FFFFFF;
 }
 .rate__option {
+  position: relative;
   padding: 14px 17px 15px;
   border-left: 2px solid #E5E5E5;
   border-bottom: 2px solid #E5E5E5;
@@ -947,4 +948,23 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #283645;
+}
+.rate__option-value {
+  top: 18px;
+  left: 226px;
+  position: absolute;
+}
+.rate__option-value--yes::before {
+  content: "";
+  width: 31px;
+  height: 21px;
+  display: block;
+  background: url("../img/main/yes.png") no-repeat;
+}
+.rate__option-value--no::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  background: url("../img/main/no.png") no-repeat;
 }
