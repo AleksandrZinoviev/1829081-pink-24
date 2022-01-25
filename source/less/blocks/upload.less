@@ -20,11 +20,6 @@
   justify-content: center;
 }
 
-.correct-list__item {
-  display: block;
-  margin: 0 auto;
-}
-
 .upload__slider-btn {
   width: 280px;
   height: 55px;
@@ -65,5 +60,13 @@
 
   &:hover {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 660px) {
+  .upload {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px;
   }
 }

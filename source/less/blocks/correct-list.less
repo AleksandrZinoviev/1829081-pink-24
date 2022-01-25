@@ -1,0 +1,39 @@
+.correct-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.correct-list__item {
+
+}
+
+.correct-list__button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.correct-list__svg {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.correct-list__button:hover .correct-list__svg{
+  opacity: 0.5;
+}
+
+.correct-list__button--active .correct-list__svg {
+  fill: #D22856;
+  opacity: 1;
+}
+
+.correct-list__button--active:hover .correct-list__svg {
+  opacity: 1;
+}
+@media (min-width: 660px) {
+  .correct-list {
+    display: none;
+  }
+}

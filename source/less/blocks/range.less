@@ -1,0 +1,34 @@
+.range {
+  position: relative;
+  width: 240px;
+  height: 10px;
+  margin: 0 auto;
+}
+
+.range__scale {
+  width: 240px;
+  height: 1px;
+  border-top: 2px solid #283645;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.range__handle {
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  left: 20%;
+  top: -5px;
+  background: #FFFFFF;
+  border: 2px solid #D22856;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.range__handle:hover {
+  background: #D22856;
+}

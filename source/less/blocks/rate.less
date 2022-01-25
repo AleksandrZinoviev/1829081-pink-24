@@ -1,14 +1,25 @@
-.rate__title{
+.rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #283645;
+}
+
+.rate__option-container {
+  background: #fdfeff;
+}
+
+.rate__title {
   margin: 0;
   padding: 0;
   background: #283645;
   border-right: 2px solid #E5E5E5;
   text-align: center;
   box-sizing: border-box;
-  padding: 14px 0 27px;
+  padding: 14px 0 9px;
 }
 
-.rate__title-name{
+.rate__title-name {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -42,9 +53,9 @@
   color: #283645;
 }
 
-.rate__option-value{
+.rate__option-value {
   top: 18px;
-  left: 201px;
+  right: 20px;
   position: absolute;
 }
 
@@ -67,5 +78,21 @@
     height: 27px;
     display: block;
     background: url("../img/main/no.png") no-repeat;
+  }
+}
+
+@media (min-width: 660px) {
+  .rate__option {
+    height: 49px;
+  }
+
+  .rate__option-title {
+    display: none;
+  }
+
+  .rate__option-value {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

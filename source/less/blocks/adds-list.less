@@ -23,7 +23,12 @@
 
 @media (min-width: 660px){
   .adds-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .adds-list__item {
+    width: 50%;
   }
 }
