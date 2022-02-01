@@ -427,9 +427,8 @@
   border: 3px solid #283645;
   border-radius: 100%;
 }
-.social-networks-list__item--twitter::before {
-  content: "";
-  background: url("../img/footer/twitter.svg") no-repeat;
+.social-networks-list__item-img {
+  padding: 10px;
 }
 .item-gallery {
   background: #F2F2F2;
